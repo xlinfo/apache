@@ -1,0 +1,10 @@
+---
+- hosts: 192.168.2.15
+  tasks:
+    - name: install apache
+      docker_container:
+        name: apache
+        image: httpd
+        ports:
+          - 81:80
+
