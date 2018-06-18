@@ -2,4 +2,4 @@
   tasks:
     - name: build apache
       docker_image:
-        name: apache:latest
+        name: httpd:latest
