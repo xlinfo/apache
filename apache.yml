@@ -7,4 +7,5 @@
         image: httpd
         ports:
           - 81:80
+        recreate: yes
 
