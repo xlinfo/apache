@@ -5,6 +5,8 @@
       docker_container:
         name: glassfish
         image: oracle/glassfish
+        env:
+          - ADMIN_PASSWORD='glassfish'
         ports:
           - 4848:4848
           - 8090:8080
