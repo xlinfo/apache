@@ -4,12 +4,8 @@
     - name: install glassfish
       docker_container:
         name: glassfish
-        env:
-          ADMIN_PASSWORD='glassfish'
-        image: oracle/glassfish
-        command: wget https://github.com/xlinfo/test/JEERed-1.0-SNAPSHOT.war
+        image: devxlinfo/glassfish
         ports:
           - 4848:4848
-          - 8090:8080
           - 8081:8081
         recreate: yes
