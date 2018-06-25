@@ -4,7 +4,7 @@
     - name: install glassfish
       docker_container:
         name: glassfish
-        image: devxlinfo/glassfish
+        image: devxlinfo/glassfish:latest
         ports:
           - 4848:4848
           - 81:8080
