@@ -7,6 +7,7 @@
         env:
           ADMIN_PASSWORD='glassfish'
         image: oracle/glassfish
+        command: wget https://github.com/xlinfo/test/JEERed-1.0-SNAPSHOT.war
         ports:
           - 4848:4848
           - 8090:8080
