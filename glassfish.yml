@@ -7,5 +7,6 @@
         image: devxlinfo/glassfish
         ports:
           - 4848:4848
+          - 8080:81
           - 8081:8081
         recreate: yes
