@@ -1,9 +1,6 @@
 ---
 - hosts: all
   tasks:
-    - name: build apache
-      docker_image:
-        name: httpd:latest
     - name: install apache
       docker_container:
         name: apache
